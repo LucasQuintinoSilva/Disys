@@ -1,0 +1,25 @@
+<div class="fixed-top">
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <div class="row collapse" id="navbarToggleExternalContent">
+        <div class="col-3 bg-dark p-4">
+          <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-carrossel-tab" data-toggle="pill" href="#v-pills-carrossel"
+                role="tab" aria-selected="true" (click)="changeScreen('Carrossel')">
+                Carrossel de Experiências
+            </a>
+            <a class="nav-link" id="v-pills-curriculo-tab" data-toggle="pill" href="#v-pills-curriculo"
+                role="tab" aria-selected="false" (click)="changeScreen('Curriculo')">
+                Curriculo do Candidato
+            </a>
+          </div>
+        </div>
+    </div>
+</div>
+
+<app-carousel *ngIf="currentScreen === 'Carrossel'"></app-carousel>
+<app-curriculum *ngIf="currentScreen === 'Curriculo'"></app-curriculum>

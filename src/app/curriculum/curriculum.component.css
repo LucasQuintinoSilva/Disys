@@ -1,0 +1,26 @@
+.card-block {
+    display: flex;
+}
+.academic-level {
+    margin: 75px auto 0px;
+    width: 30% ;
+}
+.historic {
+    margin: 40px auto 0px;
+    width: 30% ;
+}
+.courses {
+    margin: 75px auto 0px;
+    width: 40% ;
+}
+.person {
+    margin: 40px auto 0px;
+    width: 40% ;
+}
+.aditional-info {
+    margin: 40px auto 0px;
+    width: 20% ;
+}
+.know-more {
+    margin: 0px auto;
+}

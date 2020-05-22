@@ -1,0 +1,48 @@
+<div class="curriculo">
+    <div class="card-block">
+        <div class="card academic-level">
+            <div class="card-header">Formação</div>
+            <div class="card-body">
+            <h5 class="card-title">Universidade São Judas Tadeu</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Engenharia da Computação</h6>
+            <p class="card-text">Atualmente no 3º ano do curso, com previsão de término em dezembro de 2022</p>
+            </div>
+        </div>
+        
+        <div class="card courses">
+            <div class="card-header">Cursos</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Udemy The Complete Angular Course: Beginner to Advanced</li>
+                <li class="list-group-item">Udemy The Complete JavaScript Course 2019: Build Real Projects</li>
+                <li class="list-group-item">Udemy JavaScript Basics for Beginners</li>
+                <li class="list-group-item">Surfando no Scrum</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card-block">
+        <div class="card historic">
+            <div class="card-header">Hitórico Profissional</div>
+            <div class="card-body">
+            <h5 class="card-title">Indra Company</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Junior System Engineer</h6>
+            <p class="card-text">Atuando como desenvolvedor Angular em Projeto no Santander, utilizando de Angular5, TypeScript, HTML, CSS e GitLab</p>
+            </div>
+        </div>
+
+        <div class="card person">
+            <div class="card-header">Candidato</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Linkedin: <a [href]="linkedin">Lucas Quintino da Silva</a></li>
+                <li class="list-group-item">E-mail: lquintino99@gmail.com</li>
+                <li class="list-group-item">Idioma: Inglês Avançado</li>
+                <li class="list-group-item know-more"><span class="btn btn-primary" (click)="toggleInfo()">{{btnLabel}}</span></li>
+            </ul>
+        </div>
+
+        <div *ngIf="moreInfo" class="card aditional-info">
+            <div class="card-body">
+              Experiência em trabalho com pouca supervisão, em trabalho em equipe e com prazo de entrega. Rápido aprendizado, organizado e comprometido.
+            </div>
+          </div>
+    </div>
+</div>
